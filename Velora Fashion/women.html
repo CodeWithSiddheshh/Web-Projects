@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Womenswear — VELORA</title>
+  <meta name="description"
+    content="Premium womenswear: satin dresses, tailored blazers, knitwear and effortless essentials by VELORA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="women">
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu"><i
+          class="fa-solid fa-bars"></i></button>
+      <a href="index.html" class="logo">VELORA</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="login.html" class="icon-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-solid fa-heart"></i><span
+            class="badge" id="wishCount">0</span></a>
+        <a href="cart.html" class="icon-btn" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span
+            class="badge" id="cartCount">0</span></a>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="search" id="globalSearch" placeholder="Search dresses, shirts, jackets…"
+          aria-label="Search products">
+        <button class="btn btn--sm" id="searchGo">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i
+        class="fa-solid fa-xmark"></i></button>
+    <a href="index.html" class="logo">VELORA</a>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="shop.html">Shop</a>
+    <a class="nav-link" href="men.html">Men</a>
+    <a class="nav-link" href="women.html">Women</a>
+    <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+    <a class="nav-link" href="lookbook.html">Lookbook</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+    <div class="mobile-nav__footer">
+      <a href="login.html" class="icon-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-solid fa-heart"></i></a>
+      <a href="cart.html" class="icon-btn" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+
+  <section class="page-hero">
+    <img class="page-hero__img"
+      src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1920&q=80"
+      alt="Woman in flowing neutral-toned clothing walking in a city street">
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Women</p>
+      <h1 class="page-hero__title">Women</h1>
+      <p class="page-hero__subtitle">Dresses, tailoring and soft layers — designed to move with you.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+
+      <div class="toolbar" role="search">
+        <input type="search" id="searchInput" placeholder="Search products…" aria-label="Search products">
+        <select id="filterCategory" aria-label="Filter by category">
+          <option value="All">All Categories</option>
+        </select>
+        <select id="filterSize" aria-label="Filter by size">
+          <option value="All">All Sizes</option>
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>28</option>
+          <option>30</option>
+          <option>32</option>
+          <option>34</option>
+          <option>36</option>
+          <option>UK 6</option>
+          <option>UK 7</option>
+          <option>UK 8</option>
+          <option>UK 9</option>
+          <option>UK 10</option>
+          <option>One Size</option>
+        </select>
+        <select id="filterColor" aria-label="Filter by colour">
+          <option value="All">All Colours</option>
+        </select>
+        <select id="filterPrice" aria-label="Filter by price">
+          <option value="all">Any Price</option>
+          <option value="under2k">Under ₹2,000</option>
+          <option value="2k-4k">₹2,000 – ₹4,000</option>
+          <option value="4k-7k">₹4,000 – ₹7,000</option>
+          <option value="over7k">Over ₹7,000</option>
+        </select>
+        <select id="filterSort" aria-label="Sort products">
+          <option value="featured">Sort: Featured</option>
+          <option value="popular">Most Popular</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+          <option value="rating">Highest Rated</option>
+        </select>
+        <div class="view-toggle" role="group" aria-label="Change product view">
+          <button id="viewGrid" class="active" aria-label="Grid view"><i class="fa-solid fa-grip"></i></button>
+          <button id="viewList" aria-label="List view"><i class="fa-solid fa-list"></i></button>
+        </div>
+        <span class="toolbar__count" id="resultCount" aria-live="polite"></span>
+      </div>
+      <div class="product-grid" id="catalogGrid"></div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">VELORA</a>
+        <p>Contemporary silhouettes, refined essentials and effortless pieces — designed in India, made for modern
+          living.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="new-arrivals.html">New Arrivals</a></li>
+          <li><a href="shop.html">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Shipping</a></li>
+          <li><a href="contact.html">Returns</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">Journal</a></li>
+          <li><a href="about.html">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:care@velora.in">care@velora.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="contact.html">Kala Ghoda, Mumbai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 VELORA · All rights reserved · Frontend demo — no real orders are processed.</div>
+  </footer>
+</body>
+
+</html>

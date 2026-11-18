@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our gallery showcasing the finest moments at Brew & Bloom café — from artisan coffee to cozy interiors.">
+  <title>Gallery | Brew & Bloom</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">Brew & Bloom</div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <span class="nav-logo-text">Brew & Bloom</span>
+      </a>
+
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="offers.html">Offers</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav-cta">
+          <a href="reservations.html" class="btn btn-outline btn-sm">Book a Table</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1600');">
+    <div class="page-hero-content">
+      <h1>Our Gallery</h1>
+      <p>A visual journey through Brew & Bloom</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="subtitle">
+          <i class="fa-solid fa-circle"></i>
+          CAPTURED MOMENTS
+          <i class="fa-solid fa-circle"></i>
+        </div>
+        <h2>See What Makes Us Special</h2>
+        <p>Every corner of Brew & Bloom tells a story. From the rich aroma of freshly brewed coffee to the warm glow of our interior, explore the moments that make us unique.</p>
+      </div>
+
+      <!-- Gallery Filters -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="ambience">Ambience</button>
+      </div>
+
+      <!-- Gallery Masonry -->
+      <div class="gallery-masonry">
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Freshly Brewed Espresso" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Freshly Brewed Espresso</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=600" alt="Cozy Corner Seating" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cozy Corner Seating</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1484960055659-a39d25adcb3c?w=600" alt="Artisan Pastries" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Artisan Pastries</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambience">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700" alt="Morning Coffee Bar" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Morning Coffee Bar</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600" alt="Cappuccino Art" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cappuccino Art</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=600" alt="Breakfast Spread" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Breakfast Spread</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600" alt="Rustic Interior" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Rustic Interior</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?w=700" alt="Latte with Latte Art" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Latte with Latte Art</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600" alt="Fresh Sandwich" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Fresh Sandwich</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambience">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700" alt="Evening Ambience" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Evening Ambience</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=700" alt="Warm Interior Design" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Warm Interior Design</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600" alt="Cold Brew in Glass" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cold Brew in Glass</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600" alt="Gourmet Plating" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Gourmet Plating</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=600" alt="Cozy Reading Nook" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Cozy Reading Nook</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ambience">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600" alt="Outdoor Seating" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Outdoor Seating</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?w=600" alt="Decadent Dessert" loading="lazy">
+          <div class="gallery-overlay">
+            <span>Decadent Dessert</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <img src="" alt="">
+    <div class="lightbox-caption"></div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=1600');">
+    <div class="cta-content">
+      <h2>Experience It in Person</h2>
+      <p>See, taste, and feel the magic of Brew & Bloom.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Visit Us Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <span class="nav-logo-text">Brew & Bloom</span>
+          </a>
+          <p>Where every cup tells a story. Experience the perfect blend of artisanal coffee, fresh food, and warm hospitality.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="offers.html">Offers</a>
+          <a href="reservations.html">Reservations</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-item">
+            <span>Monday - Friday</span>
+            <span>7:00 AM - 8:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Saturday</span>
+            <span>8:00 AM - 9:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Sunday</span>
+            <span>8:00 AM - 7:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get special offers and updates delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Brew & Bloom. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover special offers, coffee combos, brunch specials, and student discounts at Brew & Bloom Café.">
+  <title>Special Offers | Brew & Bloom</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">BREW &amp; BLOOM</div>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="container">
+        <a href="index.html" class="nav-logo" aria-label="Brew & Bloom Home">
+          <div class="nav-logo-icon">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <span class="nav-logo-text">Brew &amp; Bloom</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="offers.html" class="active">Offers</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta">
+            <a href="reservations.html" class="btn btn-outline btn-sm">Book a Table</a>
+          </li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1600');">
+      <div class="page-hero-content">
+        <h1>Special Offers</h1>
+        <p>Exclusive deals and curated combos crafted just for you</p>
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Offers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers Grid Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="subtitle"><i class="fa-solid fa-tag"></i> Limited Time Deals</span>
+          <h2>Unbeatable Combos &amp; Discounts</h2>
+          <p>Treat yourself to exceptional coffee pairings and seasonal delights at special promotional prices.</p>
+        </div>
+
+        <div class="offers-grid">
+          <!-- Offer 1 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">25% OFF</span>
+              <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=600" alt="Morning Coffee Combo featuring freshly brewed latte and warm croissant" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Morning Coffee Combo</h3>
+              <p>Pair any signature specialty coffee with a fresh butter croissant, artisan muffin, or pastry of your choice.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Mon–Fri, 7:00 AM – 11:00 AM</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Morning Coffee Combo Offer">Claim Offer</button>
+            </div>
+          </article>
+
+          <!-- Offer 2 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">20% OFF</span>
+              <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600" alt="Weekend Brunch spread with poached eggs, latte, and fresh orange juice" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Weekend Brunch Special</h3>
+              <p>Choice of Avocado Sourdough Toast or Eggs Benedict accompanied by a large latte and freshly pressed orange juice.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Sat–Sun, 9:00 AM – 2:00 PM</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Weekend Brunch Special Offer">Claim Offer</button>
+            </div>
+          </article>
+
+          <!-- Offer 3 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">30% OFF</span>
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600" alt="Dessert and coffee pairing with artisan cake and espresso" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Dessert &amp; Coffee Combo</h3>
+              <p>Order any gourmet dessert from our bakery selection and receive 30% off any handcrafted espresso beverage.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Daily after 3:00 PM</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Dessert & Coffee Combo Offer">Claim Offer</button>
+            </div>
+          </article>
+
+          <!-- Offer 4 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">15% OFF</span>
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600" alt="Students studying with coffee and laptops at café table" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Student Special</h3>
+              <p>Present a valid student identification card and enjoy an exclusive discount on your entire order, all day every day.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Year-round with valid Student ID</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Student Special Offer">Claim Offer</button>
+            </div>
+          </article>
+
+          <!-- Offer 5 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">BOGO FREE</span>
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600" alt="Two iced specialty coffees for Happy Hour deal" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Happy Hours</h3>
+              <p>Buy any signature beverage or cold brew and receive a second drink of equal or lesser value completely complimentary.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Mon–Thu, 4:00 PM – 6:00 PM</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Happy Hours Offer">Claim Offer</button>
+            </div>
+          </article>
+
+          <!-- Offer 6 -->
+          <article class="offer-card reveal">
+            <div class="offer-card-img">
+              <span class="offer-discount">FREE CUP</span>
+              <img src="https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?w=600" alt="Brew and Bloom loyalty reward coffee cup" loading="lazy">
+            </div>
+            <div class="offer-card-body">
+              <h3>Loyalty Stamp Reward</h3>
+              <p>Collect digital or paper stamps on your Brew &amp; Bloom rewards card. Every 5 stamps unlocks a free coffee on us.</p>
+              <div class="offer-validity">
+                <i class="fa-regular fa-clock"></i>
+                <span>Valid: Always active for loyalty members</span>
+              </div>
+              <button class="btn btn-primary btn-sm" aria-label="Claim Loyalty Reward Offer">Claim Offer</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="subtitle"><i class="fa-solid fa-circle-question"></i> How It Works</span>
+          <h2>Redeeming Your Offers is Easy</h2>
+          <p>Follow three simple steps to enjoy your favorite beverages and bakery bites with incredible savings.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-card-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h4>1. Browse &amp; Choose</h4>
+            <p>Select any promotional offer or curated combo that satisfies your craving from our current specials catalog.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card-icon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h4>2. Visit Our Café</h4>
+            <p>Stop by our cozy café on Maple Avenue during the designated promotional hours with friends or on your own.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-card-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4>3. Enjoy &amp; Save</h4>
+            <p>Mention the offer code or show the webpage to our friendly barista at checkout and savor your savings instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA Section -->
+    <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=1600');">
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2>Never Miss an Exclusive Offer</h2>
+          <p>Subscribe to our VIP newsletter to receive members-only discounts, seasonal releases, and tasting event invitations.</p>
+          <div style="max-width: 480px; margin: 0 auto;">
+            <form class="newsletter-form" aria-label="Newsletter Subscription Form">
+              <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Brew & Bloom Home">
+            <div class="nav-logo-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <span class="nav-logo-text">Brew &amp; Bloom</span>
+          </a>
+          <p>Crafting memorable coffee experiences through ethically sourced beans, passionate baristas, and a warm neighborhood sanctuary.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="about.html">About Our Story</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="reservations.html">Table Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-item">
+            <span>Monday – Friday</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Saturday</span>
+            <span>8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Sunday</span>
+            <span>8:00 AM – 8:00 PM</span>
+          </div>
+          <div class="hours-item" style="margin-top: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.5);">
+            <span>Kitchen Closes 45 min prior</span>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Join our newsletter community for fresh brew recipes, secret menu items, and seasonal discounts.</p>
+          <form class="newsletter-form" aria-label="Footer Newsletter Form">
+            <input type="email" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Brew &amp; Bloom Café. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

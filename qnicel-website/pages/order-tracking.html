@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Qnicel</title>
+    <meta name="description" content="Track your order at Qnicel.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <i class="bi bi-leaf-fill text-success"></i>
+                <span class="brand-text">Qnicel</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="cart.html" class="btn btn-outline-success btn-sm rounded-circle position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success cart-count" style="font-size: 0.6rem;">0</span>
+                    </a>
+                    <a href="profile.html" class="btn btn-warning btn-sm rounded-pill px-3"><i class="bi bi-person me-1"></i>Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 py-lg-6 bg-light min-vh-100">
+        <div class="container">
+            <!-- Header -->
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <a href="profile.html" class="text-muted"><i class="bi bi-arrow-left fs-5"></i></a>
+                <div>
+                    <h1 class="display-6 fw-bold mb-0">Track Order</h1>
+                    <p class="text-muted mb-0" id="orderId">ORD-001</p>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <p class="text-muted mb-1">Order Date</p>
+                            <p class="fw-bold mb-0" id="orderDate">2024-03-01</p>
+                        </div>
+                        <div class="col-md-3 mb-3 mb-md-0">
+                            <p class="text-muted mb-1">Total Amount</p>
+                            <p class="fw-bold text-warning mb-0" id="orderTotal">₹0.00</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-muted mb-1">Items</p>
+                            <p class="fw-bold mb-0" id="orderItems">2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tracking Progress -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-4">Order Status</h4>
+                    <div class="position-relative ps-4" id="trackingProgress">
+                        <!-- Tracking steps loaded via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Items -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-4">Order Items</h4>
+                    <div id="orderItemsList">
+                        <!-- Items loaded via JS -->
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Total</span>
+                        <span class="fw-bold text-warning fs-5" id="itemsTotal">₹0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold mb-3">Delivery Address</h4>
+                    <p class="text-muted mb-0" id="deliveryAddress">123 Organic Street, Green City, EC 12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="d-flex align-items-center gap-2 text-decoration-none text-white mb-3" href="../index.html">
+                        <i class="bi bi-leaf-fill text-warning"></i>
+                        <span class="fs-4 fw-bold">Qnicel</span>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2024 Qnicel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        // Order tracking page logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const orderId = urlParams.get('id') || 'ORD-001';
+            
+            // Get orders from localStorage
+            const orders = JSON.parse(localStorage.getItem('qnicel_orders')) || sampleOrders;
+            const order = orders.find(o => o.id === orderId) || orders[0];
+            
+            if (order) {
+                document.getElementById('orderId').textContent = order.id;
+                document.getElementById('orderDate').textContent = order.date;
+                document.getElementById('orderTotal').textContent = `₹${order.total.toFixed(2)}`;
+                document.getElementById('orderItems').textContent = order.items.length;
+                document.getElementById('itemsTotal').textContent = `₹${order.total.toFixed(2)}`;
+                document.getElementById('deliveryAddress').textContent = order.address;
+                
+                // Render items
+                document.getElementById('orderItemsList').innerHTML = order.items.map(item => `
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <div>
+                            <p class="fw-medium mb-0">${item.name}</p>
+                            <small class="text-muted">Qty: ${item.quantity}</small>
+                        </div>
+                        <span class="fw-medium">₹${(item.price * item.quantity).toFixed(2)}</span>
+                    </div>
+                `).join('');
+                
+                // Render tracking progress
+                const steps = [
+                    { id: 'placed', label: 'Order Placed', icon: 'bi-clock' },
+                    { id: 'packed', label: 'Packed', icon: 'bi-box' },
+                    { id: 'shipped', label: 'Shipped', icon: 'bi-truck' },
+                    { id: 'out_for_delivery', label: 'Out for Delivery', icon: 'bi-truck' },
+                    { id: 'delivered', label: 'Delivered', icon: 'bi-house' }
+                ];
+                
+                const currentStepIndex = steps.findIndex(s => s.id === order.status);
+                
+                document.getElementById('trackingProgress').innerHTML = `
+                    <div class="tracking-line">
+                        <div class="tracking-line-progress" style="height: ${(currentStepIndex / (steps.length - 1)) * 100}%"></div>
+                    </div>
+                    ${steps.map((step, index) => {
+                        const isCompleted = index <= currentStepIndex;
+                        const isCurrent = index === currentStepIndex;
+                        const statusClass = isCompleted ? (isCurrent ? 'current' : 'completed') : 'pending';
+                        return `
+                            <div class="tracking-step ${statusClass} mb-4">
+                                <div class="tracking-step-icon">
+                                    <i class="bi ${isCompleted ? 'bi-check-lg' : step.icon}"></i>
+                                </div>
+                                <div>
+                                    <p class="fw-medium mb-0 ${isCurrent ? 'text-success' : ''}">${step.label}</p>
+                                    ${isCurrent ? '<small class="text-muted">Your order is currently at this stage</small>' : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

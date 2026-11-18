@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View and manage your shopping cart at Veloura Coffee.">
+  <title>Shopping Cart - Veloura Coffee</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- ============================================
+       Navbar
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-cup-hot-fill"></i>
+        Veloura Coffee
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link cart-icon-wrapper active" href="cart.html">
+              <i class="bi bi-cart3 fs-5"></i>
+              <span class="cart-badge" style="display: none;">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       Cart Section
+       ============================================ -->
+  <section class="cart-section">
+    <div class="container">
+      <h1 class="cart-title">Your Shopping Cart</h1>
+      
+      <!-- Empty Cart State -->
+      <div id="emptyCart" class="empty-cart" style="display: none;">
+        <i class="bi bi-cart-x"></i>
+        <h3>Your cart is empty</h3>
+        <p>Looks like you haven't added any items to your cart yet.</p>
+        <a href="menu.html" class="btn btn-primary btn-lg">
+          <i class="bi bi-grid"></i> Browse Menu
+        </a>
+      </div>
+      
+      <!-- Cart Content -->
+      <div id="cartContent">
+        <div class="row">
+          <!-- Cart Items -->
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="cart-table table-responsive">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="cartTableBody">
+                  <!-- Cart items will be loaded dynamically via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="mt-4 d-flex justify-content-between">
+              <a href="menu.html" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Continue Shopping
+              </a>
+              <button class="btn btn-outline-danger" onclick="clearCart(); renderCart();">
+                <i class="bi bi-trash"></i> Clear Cart
+              </button>
+            </div>
+          </div>
+          
+          <!-- Cart Summary -->
+          <div class="col-lg-4">
+            <div class="cart-summary">
+              <h4>Order Summary</h4>
+              
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+              </div>
+              
+              <div class="summary-row">
+                <span>Tax (8%)</span>
+                <span id="cartTax">$0.00</span>
+              </div>
+              
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span style="color: #28a745;">Free</span>
+              </div>
+              
+              <div class="summary-row total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+              </div>
+              
+              <button class="btn btn-primary w-100 btn-lg" onclick="proceedToCheckout()">
+                <i class="bi bi-credit-card"></i> Proceed to Checkout
+              </button>
+              
+              <div class="text-center mt-3">
+                <small class="text-muted">
+                  <i class="bi bi-shield-check"></i> Secure checkout
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand">
+            <i class="bi bi-cup-hot-fill"></i>
+            Veloura Coffee
+          </div>
+          <p class="footer-about">Crafting exceptional coffee experiences since 2015. Every cup tells a story of passion, quality, and dedication to the art of coffee making.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="bi bi-chevron-right"></i> Cart</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html?category=hot-coffee"><i class="bi bi-chevron-right"></i> Hot Coffee</a></li>
+            <li><a href="menu.html?category=cold-coffee"><i class="bi bi-chevron-right"></i> Cold Coffee</a></li>
+            <li><a href="menu.html?category=desserts"><i class="bi bi-chevron-right"></i> Desserts</a></li>
+            <li><a href="menu.html?category=special-blends"><i class="bi bi-chevron-right"></i> Special Blends</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>123 Coffee Street, Brew District<br>New York, NY 10001</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <span>hello@velouracoffee.com</span>
+            </li>
+            <li>
+              <i class="bi bi-clock"></i>
+              <span>Mon - Sun: 7AM - 10PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Veloura Coffee. All rights reserved. Crafted with <i class="bi bi-heart-fill" style="color: var(--gold-accent);"></i> for coffee lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       Scripts
+       ============================================ -->
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Product Data -->
+  <script src="js/products.js"></script>
+  
+  <!-- Cart System -->
+  <script src="js/cart.js"></script>
+  
+  <!-- UI Scripts -->
+  <script src="js/script.js"></script>
+  
+  <!-- Checkout Function -->
+  <script>
+    function proceedToCheckout() {
+      if (isCartEmpty()) {
+        showToast('Your cart is empty', 'error');
+        return;
+      }
+      
+      showToast('Checkout feature coming soon!', 'info');
+    }
+  </script>
+  
+</body>
+</html>

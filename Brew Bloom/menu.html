@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the full menu at Brew & Bloom. From artisanal coffee and fresh breakfast to pasta, desserts, and refreshing beverages.">
+  <title>Menu | Brew & Bloom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <span class="preloader-text">Brew & Bloom</span>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+        <span class="nav-logo-text">Brew & Bloom</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="offers.html">Offers</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav-cta">
+          <a href="reservations.html" class="btn btn-outline btn-sm">Book a Table</a>
+        </div>
+      </div>
+      <div class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1600');">
+    <div class="page-hero-content">
+      <h1>Our Menu</h1>
+      <p>Explore our carefully curated selection of beverages and dishes</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Menu</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-solid fa-utensils"></i> OUR MENU</span>
+        <h2>Explore Our Offerings</h2>
+        <p>Every dish and drink is crafted with care using the finest ingredients, designed to delight your palate.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="main">Main Course</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="beverages">Beverages</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+
+        <!-- Coffee 1: Classic Espresso -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <span class="popular-badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=500" alt="Classic Espresso" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Classic Espresso</h4>
+            <p>Double-shot single-origin espresso with a rich crema</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$4.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee 2: Cappuccino -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=500" alt="Cappuccino" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Cappuccino</h4>
+            <p>Espresso with steamed milk and a thick layer of foam</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee 3: Vanilla Latte -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=500" alt="Vanilla Latte" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Vanilla Latte</h4>
+            <p>Smooth espresso with vanilla syrup and steamed milk</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee 4: Cold Brew -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <span class="popular-badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=500" alt="Cold Brew" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Cold Brew</h4>
+            <p>Slow-steeped 18-hour cold brew served over ice</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee 5: Mocha -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=500" alt="Mocha" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Mocha</h4>
+            <p>Espresso with dark chocolate and steamed milk</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee 6: Affogato -->
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500" alt="Affogato" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Coffee</span>
+            <h4>Affogato</h4>
+            <p>Vanilla gelato drowned in a shot of hot espresso</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$6.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfast 7: Avocado Toast -->
+        <div class="menu-card reveal" data-category="breakfast">
+          <div class="menu-card-img">
+            <span class="popular-badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=500" alt="Avocado Toast" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Breakfast</span>
+            <h4>Avocado Toast</h4>
+            <p>Sourdough bread with smashed avocado, poached egg, and chili flakes</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$9.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfast 8: Eggs Benedict -->
+        <div class="menu-card reveal" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500" alt="Eggs Benedict" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Breakfast</span>
+            <h4>Eggs Benedict</h4>
+            <p>Poached eggs on English muffin with hollandaise sauce</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$11.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfast 9: Pancake Stack -->
+        <div class="menu-card reveal" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500" alt="Pancake Stack" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Breakfast</span>
+            <h4>Pancake Stack</h4>
+            <p>Fluffy buttermilk pancakes with maple syrup and fresh berries</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$10.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfast 10: Acai Bowl -->
+        <div class="menu-card reveal" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=500" alt="Acai Bowl" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Breakfast</span>
+            <h4>Acai Bowl</h4>
+            <p>Blended acai topped with granola, banana, and honey</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$8.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 11: Grilled Panini -->
+        <div class="menu-card reveal" data-category="main">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500" alt="Grilled Panini" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Main Course</span>
+            <h4>Grilled Panini</h4>
+            <p>Turkey and mozzarella panini with sun-dried tomatoes</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$10.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 12: Caesar Salad -->
+        <div class="menu-card reveal" data-category="main">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=500" alt="Caesar Salad" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Main Course</span>
+            <h4>Caesar Salad</h4>
+            <p>Crisp romaine, parmesan, croutons with housemade dressing</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$9.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 13: Pesto Pasta -->
+        <div class="menu-card reveal" data-category="main">
+          <div class="menu-card-img">
+            <span class="popular-badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500" alt="Pesto Pasta" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Main Course</span>
+            <h4>Pesto Pasta</h4>
+            <p>Fresh basil pesto with cherry tomatoes and pine nuts</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$12.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 14: Club Sandwich -->
+        <div class="menu-card reveal" data-category="main">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=500" alt="Club Sandwich" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Main Course</span>
+            <h4>Club Sandwich</h4>
+            <p>Triple-layer sandwich with chicken, bacon, lettuce, and tomato</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$10.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts 15: Tiramisu -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img">
+            <span class="popular-badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500" alt="Tiramisu" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Desserts</span>
+            <h4>Tiramisu</h4>
+            <p>Classic Italian dessert with layers of espresso-soaked ladyfingers</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$7.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts 16: Chocolate Lava Cake -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500" alt="Chocolate Lava Cake" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Desserts</span>
+            <h4>Chocolate Lava Cake</h4>
+            <p>Warm chocolate cake with a molten center, served with ice cream</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$8.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts 17: Cheesecake -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500" alt="Cheesecake" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Desserts</span>
+            <h4>Cheesecake</h4>
+            <p>New York-style creamy cheesecake with berry compote</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$7.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts 18: Croissant -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Croissant" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Desserts</span>
+            <h4>Croissant</h4>
+            <p>Freshly baked butter croissant, flaky and golden</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$4.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages 19: Matcha Latte -->
+        <div class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=500" alt="Matcha Latte" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Beverages</span>
+            <h4>Matcha Latte</h4>
+            <p>Premium ceremonial-grade matcha with oat milk</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$6.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages 20: Fresh Orange Juice -->
+        <div class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500" alt="Fresh Orange Juice" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Beverages</span>
+            <h4>Fresh Orange Juice</h4>
+            <p>Freshly squeezed juice from Valencia oranges</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$4.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages 21: Berry Smoothie -->
+        <div class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=500" alt="Berry Smoothie" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Beverages</span>
+            <h4>Berry Smoothie</h4>
+            <p>Mixed berries blended with yogurt and honey</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$6.50</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beverages 22: Chai Latte -->
+        <div class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=500" alt="Chai Latte" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <span class="menu-card-category">Beverages</span>
+            <h4>Chai Latte</h4>
+            <p>Aromatic spiced chai with steamed milk and cinnamon</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">$5.00</span>
+              <button class="menu-card-order" aria-label="Order item"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1600');">
+    <div class="cta-content">
+      <h2>Craving Something Special?</h2>
+      <p>Book a table and enjoy our full menu in a warm, inviting atmosphere.</p>
+      <a href="reservations.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-check"></i> Book a Table</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <span class="nav-logo-text">Brew & Bloom</span>
+          </a>
+          <p>A premium cafe experience where artisanal coffee meets warm hospitality. Every cup is crafted with passion and precision.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="offers.html">Offers</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-item">
+            <span>Mon - Fri</span>
+            <span>7:00 AM - 10:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Saturday</span>
+            <span>8:00 AM - 11:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Sunday</span>
+            <span>8:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for updates on new menu items, events, and exclusive offers.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright 2024 Brew & Bloom. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

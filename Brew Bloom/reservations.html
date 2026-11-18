@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Table | Brew &amp; Bloom</title>
+  <meta name="description" content="Book a table at Brew &amp; Bloom. Reserve your cozy corner for artisan coffee, breakfast, brunch, or private gatherings.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <span class="preloader-text">Brew &amp; Bloom</span>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Brew &amp; Bloom Home">
+        <div class="nav-logo-icon">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <span class="nav-logo-text">Brew &amp; Bloom</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="reservations.html" class="active">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="reservations.html" class="btn btn-outline">Book a Table</a>
+      </div>
+
+      <div class="nav-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');">
+    <div class="page-hero-content reveal">
+      <h1>Table Reservation</h1>
+      <p>Book your cozy corner at Brew &amp; Bloom in advance</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Reservations</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Reservation Section -->
+  <section class="section" aria-label="Reservation Form Section">
+    <div class="container">
+      <div class="reservation-wrapper">
+
+        <!-- Left Column: Guidelines & Details -->
+        <div class="reservation-info reveal-left">
+          <h3>Reservation Guidelines</h3>
+          <p>We recommend booking at least 2 hours in advance. For parties larger than 8, please call us directly so we can accommodate you comfortably.</p>
+
+          <div class="res-info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h5>Operating Hours</h5>
+              <span>Mon–Fri: 7:00 AM – 9:00 PM<br>Sat–Sun: 8:00 AM – 10:00 PM</span>
+            </div>
+          </div>
+
+          <div class="res-info-item">
+            <i class="fa-solid fa-users"></i>
+            <div>
+              <h5>Group Bookings</h5>
+              <span>Special arrangements available for private events, tastings, and parties of 8+</span>
+            </div>
+          </div>
+
+          <div class="res-info-item">
+            <i class="fa-solid fa-ban"></i>
+            <div>
+              <h5>Cancellation Policy</h5>
+              <span>Free cancellation up to 1 hour before your reserved reservation time</span>
+            </div>
+          </div>
+
+          <div class="res-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h5>Direct Line</h5>
+              <span>Need immediate confirmation? Call (555) 234-5678</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Reservation Form -->
+        <div class="reservation-form-wrapper reveal-right">
+          <h3>Book Your Experience</h3>
+          <form id="reservation-form" novalidate>
+
+            <div class="form-group">
+              <label for="res-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="res-name" name="name" class="form-control" placeholder="Jane Doe" required>
+              <div class="form-error" data-error="name"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="res-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="res-email" name="email" class="form-control" placeholder="jane@example.com" required>
+              <div class="form-error" data-error="email"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="res-phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="res-phone" name="phone" class="form-control" placeholder="(555) 000-0000" required>
+              <div class="form-error" data-error="phone"></div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Date <span class="required">*</span></label>
+                <input type="date" id="res-date" name="date" class="form-control" required>
+                <div class="form-error" data-error="date"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="res-time">Time <span class="required">*</span></label>
+                <select id="res-time" name="time" class="form-control" required>
+                  <option value="">Select Time</option>
+                  <option value="8:00 AM">8:00 AM</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                </select>
+                <div class="form-error" data-error="time"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-guests">Number of Guests <span class="required">*</span></label>
+                <select id="res-guests" name="guests" class="form-control" required>
+                  <option value="">Select Guests</option>
+                  <option value="1 Person">1 Person</option>
+                  <option value="2 People">2 People</option>
+                  <option value="3 People">3 People</option>
+                  <option value="4 People">4 People</option>
+                  <option value="5-6 People">5-6 People</option>
+                  <option value="7-8 People">7-8 People</option>
+                </select>
+                <div class="form-error" data-error="guests"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="res-seating">Seating Preference <span class="required">*</span></label>
+                <select id="res-seating" name="seating" class="form-control" required>
+                  <option value="">Select Seating</option>
+                  <option value="Indoor Cozy">Indoor Cozy</option>
+                  <option value="Window View">Window View</option>
+                  <option value="Outdoor Patio">Outdoor Patio</option>
+                  <option value="Quiet Nook">Quiet Nook</option>
+                </select>
+                <div class="form-error" data-error="seating"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="res-requests">Special Requests (Optional)</label>
+              <textarea id="res-requests" name="requests" class="form-control" rows="3" placeholder="Dietary restrictions, celebrations, seating needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i class="fa-solid fa-calendar-check"></i> Confirm Reservation
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 id="modal-title">Reservation Confirmed!</h3>
+      <p>Thank you for choosing Brew &amp; Bloom. We've received your table request and look forward to welcoming you.</p>
+      <button type="button" class="btn btn-primary modal-close">Got It</button>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="section section-light" aria-label="Frequently Asked Questions">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-solid fa-circle-question"></i> FREQUENTLY ASKED</span>
+        <h2>Got Questions About Reservations?</h2>
+        <p>Everything you need to know before joining us at Brew &amp; Bloom.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card-icon">
+            <i class="fa-solid fa-users-line"></i>
+          </div>
+          <h4>Large Groups</h4>
+          <p>For groups of 8 or more, we recommend calling us directly so we can prepare a dedicated space and customize your experience.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card-icon">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <h4>Reservation Fees</h4>
+          <p>Reservations are completely free of charge. We only ask that you kindly notify us if your plans change or you need to reschedule.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card-icon">
+            <i class="fa-solid fa-hourglass-half"></i>
+          </div>
+          <h4>Holding Your Table</h4>
+          <p>We hold your table for up to 15 minutes past your reserved time before releasing it to our walk-in guests.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card-icon">
+            <i class="fa-solid fa-door-open"></i>
+          </div>
+          <h4>Walk-In Policy</h4>
+          <p>Absolutely! We always keep a portion of our tables open for walk-in visitors on a first-come, first-served basis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=1600');">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Prefer to Order Online?</h2>
+        <p>Browse our full menu and plan your culinary journey before you arrive.</p>
+        <a href="menu.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-utensils"></i> Explore Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <span class="nav-logo-text">Brew &amp; Bloom</span>
+          </a>
+          <p>A sanctuary for coffee lovers, offering artisanal roasts, exquisite pastries, and a warm community atmosphere in the heart of the city.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Full Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="offers.html">Special Offers</a>
+          <a href="reservations.html">Table Reservation</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-item">
+            <span>Monday – Friday</span>
+            <span>7:00 AM – 9:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Saturday</span>
+            <span>8:00 AM – 10:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Sunday</span>
+            <span>8:00 AM – 8:00 PM</span>
+          </div>
+          <div class="hours-item" style="margin-top: 0.75rem;">
+            <span>Kitchen Closes</span>
+            <span>1 hr before closing</span>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for seasonal menu updates, event invites, and exclusive offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address for newsletter" required>
+            <button type="submit" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Brew &amp; Bloom Café. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

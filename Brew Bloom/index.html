@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bloom — Premium Café Experience</title>
+  <meta name="description" content="Brew & Bloom is a premium café offering artisanal coffee, fresh pastries, and a warm atmosphere. Discover our carefully crafted menu and reserve your table today.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-spinner"></div>
+    <span class="preloader-text">Brew & Bloom</span>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Brew and Bloom Home">
+        <div class="nav-logo-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+        <span class="nav-logo-text">Brew & Bloom</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="offers.html">Offers</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <div class="nav-cta">
+          <a href="reservations.html" class="btn btn-outline">Book a Table</a>
+        </div>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600');" aria-label="Hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-star"></i> Premium Coffee Experience
+        </div>
+        <h1>Where Every Cup Tells a Story</h1>
+        <p>Discover the perfect blend of artisanal coffee, fresh pastries, and a warm atmosphere that feels like home.</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-book-open"></i> Explore Menu
+          </a>
+          <a href="reservations.html" class="btn btn-outline btn-lg">
+            <i class="fa-regular fa-calendar"></i> Reserve a Table
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED DRINKS ============ -->
+  <section class="section" aria-label="Featured drinks">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-solid fa-mug-hot"></i> Our Specialties</span>
+        <h2>Crafted with Passion</h2>
+        <p>From rich espressos to refreshing cold brews, every drink is a masterpiece made with the finest ingredients.</p>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Card 1 -->
+        <div class="featured-card reveal">
+          <div class="featured-card-img">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600" alt="Signature Espresso served in a ceramic cup" loading="lazy">
+            <span class="featured-badge">Bestseller</span>
+          </div>
+          <div class="featured-card-body">
+            <h4>Signature Espresso</h4>
+            <p>Rich, bold, and perfectly extracted single-origin espresso</p>
+            <span class="featured-price">$4.50</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="featured-card reveal">
+          <div class="featured-card-img">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600" alt="Caramel Latte with artful foam design" loading="lazy">
+          </div>
+          <div class="featured-card-body">
+            <h4>Caramel Latte</h4>
+            <p>Smooth espresso with steamed milk and house-made caramel</p>
+            <span class="featured-price">$5.50</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="featured-card reveal">
+          <div class="featured-card-img">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600" alt="Matcha Bloom green tea latte" loading="lazy">
+          </div>
+          <div class="featured-card-body">
+            <h4>Matcha Bloom</h4>
+            <p>Ceremonial-grade matcha with oat milk and vanilla</p>
+            <span class="featured-price">$6.00</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="featured-card reveal">
+          <div class="featured-card-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Cold Brew coffee served over ice" loading="lazy">
+            <span class="featured-badge">Popular</span>
+          </div>
+          <div class="featured-card-body">
+            <h4>Cold Brew</h4>
+            <p>Slow-steeped for 18 hours, served over ice</p>
+            <span class="featured-price">$5.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT PREVIEW ============ -->
+  <section class="section section-light" aria-label="About Brew and Bloom">
+    <div class="container">
+      <div class="about-preview">
+        <div class="about-preview-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800" alt="Interior view of Brew and Bloom cafe with warm lighting" loading="lazy">
+          <div class="accent-box">
+            <span class="number">12</span>
+            <span class="label">Years of Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-preview-text reveal-right">
+          <span class="subtitle"><i class="fa-solid fa-heart"></i> About Us</span>
+          <h2>A Passion for Exceptional Coffee</h2>
+          <p class="highlight-text">We believe that great coffee is more than just a drink — it is an experience that brings people together.</p>
+          <p>At Brew & Bloom, we have spent over a decade perfecting our craft. From ethically sourced beans to our signature roasting process, every detail is designed to deliver an unforgettable cup.</p>
+
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-fire"></i>
+              <span>Artisan Roasted</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Organic Beans</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Expert Baristas</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-couch"></i>
+              <span>Cozy Ambience</span>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right"></i> Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section" aria-label="Why choose Brew and Bloom">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-solid fa-gem"></i> Why Brew & Bloom</span>
+        <h2>What Sets Us Apart</h2>
+        <p>Four pillars that define our commitment to quality and your satisfaction.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h4>Farm to Cup</h4>
+          <p>Our beans are sourced directly from sustainable farms across Colombia, Ethiopia, and Guatemala.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h4>Expert Brewing</h4>
+          <p>Our trained baristas use perfected techniques to bring out the best flavour in every cup.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h4>Fresh Ingredients</h4>
+          <p>Locally sourced produce and organic ingredients whenever possible for the freshest taste.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h4>Made with Love</h4>
+          <p>Every cup and every plate is crafted with genuine care and attention to detail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TODAY'S SPECIALS ============ -->
+  <section class="section section-light" aria-label="Today's specials">
+    <div class="container">
+      <div class="specials-banner reveal">
+        <div class="specials-content">
+          <span class="subtitle" style="color: var(--clr-accent);"><i class="fa-solid fa-wand-magic-sparkles"></i> Today's Specials</span>
+          <h2>Handpicked Just for You</h2>
+          <p>Our chef and baristas have curated a selection of the day's finest offerings for your enjoyment.</p>
+
+          <div class="specials-items">
+            <div class="special-item">
+              <i class="fa-solid fa-mug-hot"></i>
+              <div class="item-info">
+                <span class="item-name">Honey Lavender Latte</span>
+                <span class="item-desc">Espresso with lavender syrup and local honey</span>
+              </div>
+              <span class="item-price">$6.50</span>
+            </div>
+            <div class="special-item">
+              <i class="fa-solid fa-bread-slice"></i>
+              <div class="item-info">
+                <span class="item-name">Truffle Mushroom Toast</span>
+                <span class="item-desc">Sourdough with sauteed mushrooms and truffle oil</span>
+              </div>
+              <span class="item-price">$9.00</span>
+            </div>
+            <div class="special-item">
+              <i class="fa-solid fa-bowl-food"></i>
+              <div class="item-info">
+                <span class="item-name">Berry Acai Bowl</span>
+                <span class="item-desc">Blended acai topped with fresh berries and granola</span>
+              </div>
+              <span class="item-price">$8.50</span>
+            </div>
+          </div>
+
+          <a href="menu.html" class="btn btn-primary">
+            <i class="fa-solid fa-book-open"></i> View Full Menu
+          </a>
+        </div>
+
+        <div class="specials-img">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800" alt="Freshly brewed coffee being poured into a ceramic cup" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" aria-label="Customer testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-solid fa-quote-left"></i> Testimonials</span>
+        <h2>What Our Guests Say</h2>
+        <p>Real stories from our beloved patrons who keep coming back.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>The best coffee I have ever had in this city. The Signature Espresso is absolutely divine, and the pastries are baked to perfection every single time. Brew & Bloom has become my daily ritual.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Portrait of Sarah Mitchell" loading="lazy">
+            <div class="testimonial-author-info">
+              <h5>Sarah Mitchell</h5>
+              <span>Food Blogger</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>A hidden gem with the most welcoming staff. The Cold Brew is unmatched, and the cozy interior makes it perfect for both work and relaxation. Highly recommended for anyone who loves quality coffee.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Portrait of James Cooper" loading="lazy">
+            <div class="testimonial-author-info">
+              <h5>James Cooper</h5>
+              <span>Regular Guest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <i class="fa-solid fa-quote-left quote-icon"></i>
+          <p>The ambience is perfect for a quiet afternoon read or a catch-up with friends. Their Matcha Bloom is the smoothest matcha latte I have tasted. Every visit feels like a mini retreat.</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Portrait of Emily Chen" loading="lazy">
+            <div class="testimonial-author-info">
+              <h5>Emily Chen</h5>
+              <span>Coffee Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM PREVIEW ============ -->
+  <section class="section section-light" aria-label="Instagram gallery preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle"><i class="fa-brands fa-instagram"></i> Follow Us</span>
+        <h2>Moments at Brew & Bloom</h2>
+        <p>Peek into everyday life at our cafe. Follow us for daily inspiration.</p>
+      </div>
+
+      <div class="insta-grid reveal">
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=500" alt="Latte art being poured by a barista" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?w=500" alt="Freshly baked pastries displayed on a wooden board" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=500" alt="Cozy corner seating inside the cafe" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500" alt="Beautifully plated brunch at the cafe" loading="lazy">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION ============ -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1600');" aria-label="Call to action">
+    <div class="cta-content reveal">
+      <h2>Ready to Experience Brew & Bloom?</h2>
+      <p>Reserve your table today and indulge in our finest offerings.</p>
+      <a href="reservations.html" class="btn btn-primary btn-lg">
+        <i class="fa-regular fa-calendar-check"></i> Book a Table
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <span class="nav-logo-text">Brew & Bloom</span>
+          </a>
+          <p>A premium cafe experience where every cup is crafted with care and every visit feels like coming home. Serving the community since 2012.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="offers.html">Offers</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <div class="hours-item">
+            <span>Mon - Fri</span>
+            <span>7:00 AM - 9:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Saturday</span>
+            <span>8:00 AM - 10:00 PM</span>
+          </div>
+          <div class="hours-item">
+            <span>Sunday</span>
+            <span>8:00 AM - 8:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to get the latest offers and updates delivered to your inbox.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2024 Brew & Bloom. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

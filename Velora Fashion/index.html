@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELORA — The New Standard of Everyday Style</title>
+  <meta name="description"
+    content="VELORA is a premium fashion house crafting contemporary silhouettes, refined essentials and effortless pieces for modern living.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="home">
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu"><i
+          class="fa-solid fa-bars"></i></button>
+      <a href="index.html" class="logo">VELORA</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="login.html" class="icon-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-solid fa-heart"></i><span
+            class="badge" id="wishCount">0</span></a>
+        <a href="cart.html" class="icon-btn" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span
+            class="badge" id="cartCount">0</span></a>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="search" id="globalSearch" placeholder="Search dresses, shirts, jackets…"
+          aria-label="Search products">
+        <button class="btn btn--sm" id="searchGo">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close menu"><i
+        class="fa-solid fa-xmark"></i></button>
+    <a href="index.html" class="logo">VELORA</a>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="shop.html">Shop</a>
+    <a class="nav-link" href="men.html">Men</a>
+    <a class="nav-link" href="women.html">Women</a>
+    <a class="nav-link" href="new-arrivals.html">New Arrivals</a>
+    <a class="nav-link" href="lookbook.html">Lookbook</a>
+    <a class="nav-link" href="about.html">About</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+    <div class="mobile-nav__footer">
+      <a href="login.html" class="icon-btn" aria-label="Account"><i class="fa-solid fa-user"></i></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-solid fa-heart"></i></a>
+      <a href="cart.html" class="icon-btn" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero__img"
+      src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1920&q=80"
+      alt="Editorial fashion portrait of a model in contemporary VELORA clothing">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__eyebrow">Autumn / Winter 2026</span>
+      <h1 class="hero__title">The New Standard<br>of Everyday Style</h1>
+      <p class="hero__text">Contemporary silhouettes, refined essentials, and effortless pieces designed for modern
+        living.</p>
+      <div class="hero__actions">
+        <a href="women.html" class="btn btn--light">Shop Women</a>
+        <a href="men.html" class="btn btn--ghost-light">Shop Men</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Curated Collections</span>
+        <h2 class="section-title">Shop by Category</h2>
+      </div>
+      <div class="category-grid">
+        <a href="women.html" class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+            alt="Woman in a stylish autumn outfit holding shopping bags" loading="lazy">
+          <div class="category-card__content">
+            <span class="category-card__count">12+ Styles</span>
+            <h3 class="category-card__title">Women</h3>
+            <span class="text-link" style="border-color:#fff;color:#fff;">Explore</span>
+          </div>
+        </a>
+        <a href="men.html" class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=900&q=80"
+            alt="Man in a tailored jacket in an editorial menswear portrait" loading="lazy">
+          <div class="category-card__content">
+            <span class="category-card__count">10+ Styles</span>
+            <h3 class="category-card__title">Men</h3>
+            <span class="text-link" style="border-color:#fff;color:#fff;">Explore</span>
+          </div>
+        </a>
+        <a href="shop.html" class="category-card reveal">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80"
+            alt="Premium leather accessories and bags styled on a neutral background" loading="lazy">
+          <div class="category-card__content">
+            <span class="category-card__count">6+ Styles</span>
+            <h3 class="category-card__title">Accessories</h3>
+            <span class="text-link" style="border-color:#fff;color:#fff;">Explore</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section section--beige">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Just Landed</span>
+        <h2 class="section-title">New Arrivals</h2>
+      </div>
+      <div class="product-grid" id="newArrivalsGrid"></div>
+      <div style="text-align:center;margin-top:50px;" class="reveal">
+        <a href="new-arrivals.html" class="btn btn--outline">View All New Arrivals</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Banner -->
+  <section class="editorial">
+    <div class="editorial__media reveal reveal--left">
+      <img src="https://images.unsplash.com/photo-1462703188445-c46b6610bfb7?auto=format&fit=crop&w=1000&q=80"
+        alt="Editorial fashion photograph of garments in motion" loading="lazy">
+    </div>
+    <div class="editorial__body reveal reveal--right">
+      <span class="section-eyebrow editorial__eyebrow">The VELORA Ethos</span>
+      <h2 class="editorial__title">Defined by Details</h2>
+      <p class="editorial__text">Designed with intention. Made for movement. Built to become part of your everyday
+        wardrobe.</p>
+      <a href="about.html" class="btn btn--light">Our Story</a>
+    </div>
+  </section>
+
+  <!-- Trending Collection -->
+  <section class="section">
+    <div class="container">
+      <div class="showcase-head reveal">
+        <div>
+          <span class="section-eyebrow">Most Coveted</span>
+          <h2 class="section-title">Trending Now</h2>
+        </div>
+        <div class="showcase-nav">
+          <button class="showcase-btn" id="trendPrev" aria-label="Scroll trending products left"><i
+              class="fa-solid fa-arrow-left"></i></button>
+          <button class="showcase-btn" id="trendNext" aria-label="Scroll trending products right"><i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="showcase reveal" id="trendingTrack"></div>
+    </div>
+  </section>
+
+  <!-- Brand Statement -->
+  <section class="section section--beige">
+    <div class="container statement reveal">
+      <div class="statement__divider"></div>
+      <h2 class="statement__quote">Fashion should feel <em>effortless</em>.</h2>
+      <p class="statement__text">Every VELORA piece begins in our Mumbai atelier — cut from certified natural fibres,
+        sewn with intention and finished by hand. We believe in fewer, better things: wardrobe foundations made with
+        craftsmanship, quality and timeless design at their core.</p>
+      <a href="lookbook.html" class="text-link">View the Lookbook</a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section newsletter">
+    <div class="container reveal">
+      <span class="section-eyebrow">The VELORA List</span>
+      <h2 class="section-title">Stay in the Loop</h2>
+      <p style="color:var(--stone);font-weight:300;max-width:460px;margin:14px auto 0;">Sign up for new collections,
+        exclusive releases and fashion stories.</p>
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Email address" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter__msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">VELORA</a>
+        <p>Contemporary silhouettes, refined essentials and effortless pieces — designed in India, made for modern
+          living.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="new-arrivals.html">New Arrivals</a></li>
+          <li><a href="shop.html">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Shipping</a></li>
+          <li><a href="contact.html">Returns</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="lookbook.html">Lookbook</a></li>
+          <li><a href="about.html">Journal</a></li>
+          <li><a href="about.html">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:care@velora.in">care@velora.in</a></li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="contact.html">Kala Ghoda, Mumbai</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 VELORA · All rights reserved · Frontend demo — no real orders are processed.</div>
+  </footer>
+</body>
+
+</html>

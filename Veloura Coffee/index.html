@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veloura Coffee - Premium artisan coffee and desserts. Experience the finest coffee blends in an elegant atmosphere.">
+  <title>Veloura Coffee - Premium Artisan Coffee</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- ============================================
+       Navbar
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-cup-hot-fill"></i>
+        Veloura Coffee
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link cart-icon-wrapper" href="cart.html">
+              <i class="bi bi-cart3 fs-5"></i>
+              <span class="cart-badge" style="display: none;">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       Hero Section
+       ============================================ -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1 class="hero-title">Experience the <span>Art</span> of Coffee</h1>
+            <p class="hero-subtitle">Indulge in our meticulously crafted coffee blends, sourced from the world's finest regions and roasted to perfection.</p>
+            <div class="hero-buttons">
+              <a href="menu.html" class="btn btn-gold btn-lg">
+                <i class="bi bi-cup-hot"></i> Order Now
+              </a>
+              <a href="about.html" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-info-circle"></i> Our Story
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper text-center">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Premium Coffee" class="hero-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Features Section
+       ============================================ -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Veloura</h2>
+        <p>We are committed to delivering an exceptional coffee experience through quality, craftsmanship, and passion.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-award"></i>
+            </div>
+            <h4>Premium Quality</h4>
+            <p>We source only the finest Arabica beans from sustainable farms around the world, ensuring every cup meets our exacting standards.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-heart"></i>
+            </div>
+            <h4>Crafted with Love</h4>
+            <p>Each beverage is handcrafted by our skilled baristas who pour their passion and expertise into every creation.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h4>Fresh Daily</h4>
+            <p>Our beans are roasted in small batches daily to guarantee maximum freshness and flavor in every sip.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Featured Products Section
+       ============================================ -->
+  <section class="section-padding" style="background-color: var(--light-gray);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Discover our most beloved coffee creations and desserts, carefully selected for your enjoyment.</p>
+      </div>
+      
+      <div class="row" id="featuredProductsContainer">
+        <!-- Products will be loaded dynamically via JavaScript -->
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="menu.html" class="btn btn-primary btn-lg">
+          <i class="bi bi-grid"></i> View All Products
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Specialty Section
+       ============================================ -->
+  <section class="section-padding specialty-section">
+    <div class="container specialty-content">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="specialty-title">Our Signature Blends</h2>
+          <p class="specialty-text">Experience the unique character of our carefully curated coffee blends. Each blend tells a story of its origin, from the highlands of Ethiopia to the mountains of Colombia.</p>
+          <p class="specialty-text">Our master roasters have spent years perfecting the art of blending, creating harmonious flavor profiles that delight the senses and elevate your coffee experience.</p>
+          <a href="menu.html?category=special-blends" class="btn btn-gold btn-lg mt-3">
+            <i class="bi bi-bag"></i> Shop Blends
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="blend-card">
+                <i class="bi bi-geo-alt"></i>
+                <h5>Ethiopian Origin</h5>
+                <p>Floral & Citrus Notes</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="blend-card">
+                <i class="bi bi-stars"></i>
+                <h5>Colombian Gold</h5>
+                <p>Caramel & Nutty</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="blend-card">
+                <i class="bi bi-fire"></i>
+                <h5>Sumatra Dark</h5>
+                <p>Earthy & Spicy</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="blend-card">
+                <i class="bi bi-heart-fill"></i>
+                <h5>Veloura House</h5>
+                <p>Balanced & Smooth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       Footer
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand">
+            <i class="bi bi-cup-hot-fill"></i>
+            Veloura Coffee
+          </div>
+          <p class="footer-about">Crafting exceptional coffee experiences since 2015. Every cup tells a story of passion, quality, and dedication to the art of coffee making.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            <li><a href="cart.html"><i class="bi bi-chevron-right"></i> Cart</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html?category=hot-coffee"><i class="bi bi-chevron-right"></i> Hot Coffee</a></li>
+            <li><a href="menu.html?category=cold-coffee"><i class="bi bi-chevron-right"></i> Cold Coffee</a></li>
+            <li><a href="menu.html?category=desserts"><i class="bi bi-chevron-right"></i> Desserts</a></li>
+            <li><a href="menu.html?category=special-blends"><i class="bi bi-chevron-right"></i> Special Blends</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Us</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>123 Coffee Street, Brew District<br>New York, NY 10001</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <span>hello@velouracoffee.com</span>
+            </li>
+            <li>
+              <i class="bi bi-clock"></i>
+              <span>Mon - Sun: 7AM - 10PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Veloura Coffee. All rights reserved. Crafted with <i class="bi bi-heart-fill" style="color: var(--gold-accent);"></i> for coffee lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       Scripts
+       ============================================ -->
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Product Data -->
+  <script src="js/products.js"></script>
+  
+  <!-- Cart System -->
+  <script src="js/cart.js"></script>
+  
+  <!-- UI Scripts -->
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
